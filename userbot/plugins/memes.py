@@ -246,7 +246,7 @@ async def payf(event):
 async def source(e):
     await edit_or_reply(
         e,
-        "Click [here](https://github.com/sandy1709/catuserbot) to open this lit af repo.",
+        "Click [here](https://github.com/TheWeaver786/catuserbot) to open this lit af repo.",
     )
 
 
