@@ -202,6 +202,8 @@ class Config((object)):
     # can get from https://coffeehouse.intellivoid.net/
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     CHANGE_TIME = int(os.environ.get("CHANGE_TIME", 60))
+    # Uptobox
+    USR_TOKEN_UPTOBOX = os.environ.get("USR_TOKEN_UPTOBOX") or None
 
 
 class Production(Config):
