@@ -5,12 +5,13 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-
+import asyncio
 import json
 import re
 import urllib.parse
 from os import popen
 from random import choice
+from asyncio import create_subprocess_shell as asyncSubprocess
 
 import requests
 from bs4 import BeautifulSoup
@@ -339,7 +340,7 @@ def androidfilehost(url: str) -> str:
         reply += f"[{name}]({dl_url}) "
     return reply
     
-def uptobox(request, url: str) -> str:
+async def uptobox(request, url: str) -> str:
     """ Uptobox direct links generator """
     try:
         link = re.findall(r'\bhttps?://.*uptobox\.com\S+', url)[0]
