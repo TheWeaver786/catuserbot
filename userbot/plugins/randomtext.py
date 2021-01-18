@@ -10,7 +10,7 @@ No Logic Pligon for @PepeBot
 
 import random
 import asyncio
-
+from asyncio import sleep
 
 @bot.on(admin_cmd(pattern=r"sing$", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"sing$", allow_sudo=True))
