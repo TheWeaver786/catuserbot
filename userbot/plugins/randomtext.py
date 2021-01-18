@@ -9,7 +9,7 @@ No Logic Pligon for @PepeBot
 """
 
 import random
-from asyncio import sleep
+import asyncio
 
 
 @bot.on(admin_cmd(pattern=r"sing$", outgoing=True))
